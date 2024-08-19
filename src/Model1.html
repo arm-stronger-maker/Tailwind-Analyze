@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next upgrade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+    <style>
+        .feature-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+    </style>
+
+</head>
+<body class="bg-gray-300">
+    <nav class="bg-white fixed w-full ">
+        <div class="container mx-auto px-3 py-5 flex justify-between items-center">
+            <h1 class="font-bold text-xl md:text-3xl text-gray-800">FemaleFirst</h1>
+            <div class="hidden md:flex space-x-6"> <!--- Default ha invisibel ah irukum. But medium screen la "md:flex" overrides(break) the hidden class property and show this div --->
+                <a href="#home" class="text-gray-800 text-lg hover:text-gray-300">Home</a> <!---text-lg means text larger ah irukum--->
+                <a href="#features" class="text-gray-800 text-lg hover:text-gray-300">Features</a>
+                <a href="#services" class="text-gray-800 text-lg hover:text-gray-300">Services</a>
+                <a href="#testimonials" class="text-gray-800 text-lg hover:text-gray-300">Testimonials</a>
+                <a href="#contact" class="text-gray-800 text-lg hover:text-gray-300">Contact</a>
+            </div>
+            <button class="md:hidden" id="main-menu">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="hidden md:hidden" id="sub-menu">
+                <!-- List of CSS Classes -->
+                <a href="#home" class="block text-gray-800 text-lg hover:bg-gray-300 px-4 py-1.5">Home</a>
+                <a href="#features" class="block text-gray-800 text-lg hover:bg-gray-300 px-4 py-1.5">Features</a>
+                <a href="#services" class="block text-gray-800 text-lg hover:bg-gray-300 px-4 py-1.5">Services</a>
+                <a href="#testimonials" class="block text-gray-800 text-lg hover:bg-gray-300 px-4 py-1.5">Testimonials</a>
+                <a href="#contact" class="block text-gray-800 text-lg hover:bg-gray-300 px-4 py-1.5">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="bg-pink-300 py-24 flex justify-center items-center">
+        <div class="container mx-auto text-center pt-5">
+            <h1 class="text-gray-900 font-bold text-3xl md:text-5xl">Welcome to our Amazing Website</h1>
+            <h3 class=" pt-10 text-xl">We offer a range of services-to help you achieve the results you're after.</h3>
+            <div class="flex justify-center space-x-5">
+            <a href="#features" class="mt-10 px-6 py-3 rounded-full shadow bg-green-400 hover:bg-pink-500 hover:text-white transition">Learn more</a>
+            <button class="mt-10 px-6 py-3 bg-white rounded-full shadow hover:bg-gray-700 hover:text-white transition">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+   <section id="features" class="flex justify-center items-center py-16">
+    <div class="text-center container px-4">
+        <h1 class="font-bold text-3xl md:text-5xl mb-12">Our Unique features</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="feature-card bg-white p-7 text-center rounded shadow">
+                <div class="text-blue-500 mb-4 ">
+                    <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 19.364a1.5 1.5 0 00-2.122 0l-1.293 1.293a1.5 1.5 0 000 2.122l9.192 9.192a1.5 1.5 0 002.122 0l1.293-1.293a1.5 1.5 0 000-2.122l-9.192-9.192z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.95 7.05a7.5 7.5 0 11-10.607 10.607M9.878 12.878a3.5 3.5 0 114.95 4.95"></path>
+                    </svg>
+                </div>
+                <h1 class="font-bold text-2xl mb-5 ">Custom Development</h1>
+                <p class="text-lg">We provide unique and innovative solutions that cater to your needs.</p>
+            </div>
+            <div class="feature-card bg-white p-7 text-center rounded shadow">
+                <div class="text-blue-500 mb-4 ">
+                    <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 19.364a1.5 1.5 0 00-2.122 0l-1.293 1.293a1.5 1.5 0 000 2.122l9.192 9.192a1.5 1.5 0 002.122 0l1.293-1.293a1.5 1.5 0 000-2.122l-9.192-9.192z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.95 7.05a7.5 7.5 0 11-10.607 10.607M9.878 12.878a3.5 3.5 0 114.95 4.95"></path>
+                    </svg>
+                </div>
+                <h1 class="font-bold text-2xl mb-5">Custom Development</h1>
+                <p class="text-lg">We provide unique and innovative solutions that cater to your needs.</p>
+            </div>
+            <div class="feature-card bg-white p-7 text-center rounded shadow">
+                <div class="text-blue-500 mb-4 ">
+                    <svg class="w-12 h-12 mx-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 19.364a1.5 1.5 0 00-2.122 0l-1.293 1.293a1.5 1.5 0 000 2.122l9.192 9.192a1.5 1.5 0 002.122 0l1.293-1.293a1.5 1.5 0 000-2.122l-9.192-9.192z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.95 7.05a7.5 7.5 0 11-10.607 10.607M9.878 12.878a3.5 3.5 0 114.95 4.95"></path>
+                    </svg>
+                </div>
+                <h1 class="font-bold text-2xl mb-5">Custom Development</h1>
+                <p class="text-lg">We provide unique and innovative solutions that cater to your needs.</p>
+            </div>
+        </div>
+    </div>
+   </section>
+
+
+   <section id="services" class="bg-gray-400 py-16">
+        <div class="container mx-auto px-4">
+            <h1 class="font-bold text-2xl md:text-4xl mb-8 text-center">Our Sevices</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-7 bg-white text-center rounded-lg shadow">
+                    <h2 class="font-bold text-2xl mb-4">Web Development</h2>
+                    <p class="text-gray-600 text-lg">Creating stunning websites that drive business growth.</p>
+                </div>
+                <div class="p-7 bg-white text-center rounded shadow">
+                    <h2 class="font-bold text-2xl mb-4">Web Development</h2>
+                    <p class="text-gray-600 text-lg">Creating stunning websites that drive business growth.</p>
+                </div>
+                <div class="p-7 bg-white text-center rounded-sm shadow">
+                    <h2 class="font-bold text-2xl mb-4">Web Development</h2>
+                    <p class="text-gray-600 text-lg">Creating stunning websites that drive business growth.</p>
+                </div>
+            </div>
+        </div>
+   </section>
+
+   <section id="testimonials" class="py-16">
+        <div class="container mx-auto px-4">
+                <h1 class="font-bold text-2xl md:text-4xl text-gray-900 text-center mb-7">What our Clients Say</h1>
+                <div class="grid grid-cols-1 bg-black rounded-lg shadow-lg gap-y-6">
+                        <div class="py-5 bg-white">
+                            <div class="text-yellow-500 mb-4">
+                                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10V6a5 5 0 0110 0v4M5 18h14a2 2 0 002-2v-5a5 5 0 00-10 0 5 5 0 00-10 0v5a2 2 0 002 2zm14 0v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2"></path></svg>
+                            </div>
+                            <div class="text-center">
+                                <h2 class="font-bold text-black text-xl mb-3">Client One</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio</p>
+                            </div>
+                        </div>
+                        <div class="py-5 bg-white">
+                            <div class="text-yellow-500 mb-4">
+                                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10V6a5 5 0 0110 0v4M5 18h14a2 2 0 002-2v-5a5 5 0 00-10 0 5 5 0 00-10 0v5a2 2 0 002 2zm14 0v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2"></path></svg>
+                            </div>
+                            <div class="text-center">
+                                <h2 class="font-bold text-black text-xl mb-3">Client One</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio</p>
+                            </div>
+                        </div>
+                        <div class="py-5 bg-white">
+                            <div class="text-yellow-500 mb-4">
+                                <svg class="w-12 h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10V6a5 5 0 0110 0v4M5 18h14a2 2 0 002-2v-5a5 5 0 00-10 0 5 5 0 00-10 0v5a2 2 0 002 2zm14 0v2a1 1 0 01-1 1H6a1 1 0 01-1-1v-2"></path></svg>
+                            </div>
+                            <div class="text-center">
+                                <h2 class="font-bold text-black text-xl mb-3">Client One</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio</p>
+                            </div>
+                        </div>
+                </div>
+        </div>
+   </section>
+
+   <footer class="bg-gray-700 py-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-white text-center font-medium">&copy; femalefirist. All rights reserved</h2>
+        </div>
+   </footer>
+
+    <script>
+        // effectively showing or hiding the sub-menu.
+        document.getElementById('main-menu').addEventListener('click', function(){
+            var get = document.getElementById('sub-menu');
+            get.classList.toggle('hidden') // toggle means => It adds a class if it's not present, or removes it if it is present.
+        }) // hidden =>  'hidden' class typically sets 'display: none';
+
+        document.querySlectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior:'smooth'
+                })
+            })
+        })
+
+    </script>
+</body>
+</html>
