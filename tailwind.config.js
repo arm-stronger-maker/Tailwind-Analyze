@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        baskervvilliess: ['"Baskervville SC"', 'serif'] 
+        baskervvilliess: ['"Baskervville SC"', 'serif'] ,
+        Robotocondensed: [ "Roboto Condensed", 'sans-serif']
       },
     },
   },
